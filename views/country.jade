@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    table
+        tr
+            td 代码
+            td 名称
+            td 面积
+            td 人口
+            td 洲
+            td 独立年份
+        each country in countries
+            tr
+                td= country.code
+                td= country.name
+                td= country.surfaceArea
+                td= country.population
+                td= country.continent
+                td= country.indepYear
